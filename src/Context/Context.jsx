@@ -19,7 +19,7 @@ function Context({children}) {
 
     const dataGetFromBackend = (idOfArr) => {
   
-        fetch(`http://localhost:3000?id=${idOfArr}`)
+        fetch(`https://darazapi.netlify.app?id=${idOfArr}`)
         .then(response => response.json())
         .then(data => {
           // console.log( data)
