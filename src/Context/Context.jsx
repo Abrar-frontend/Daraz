@@ -13,7 +13,7 @@ function Context({children}) {
 
    const [product , setProduct ] = useState([])
 
-   const [products, setProducts] = useState([]);
+  //  const [products, setProducts] = useState([]);
 
   //  console.log(product,"check product in context")
 
@@ -29,6 +29,7 @@ function Context({children}) {
         // })
         setProduct([...data])
         console.log(product , 'from context api file')
+        console.log(...data , 'from context api file')
        
         })
   .catch(error => {
@@ -46,10 +47,9 @@ return(
         setArr,
         arr1,
         setArr1,
+        setProduct,
         product,
         dataGetFromBackend,
-        products, 
-        setProducts,
         }}>
      {children}
     </contextVar.Provider>

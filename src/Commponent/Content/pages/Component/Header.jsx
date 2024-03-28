@@ -3,13 +3,13 @@ import useAuth from '../../../../Context/Auth'
 
 function Header() {
 
-  const { products}  =  useAuth()
+  const { product }  =  useAuth()
 
 
   return (
 
     <div className='w-full flex flex-row items-center justify-between mb-5 '>
-    <p className='text-gray-500 text-sm'> {products.length} items found For <span className='text-orange-500'>Apple</span></p>
+    <p className='text-gray-500 text-sm'> {product.length} items found For <span className='text-orange-500'>Apple</span></p>
 
     <div className='text-sm flex flex-row justify-center items-center gap-6'>
     <p> Sort By:</p>
