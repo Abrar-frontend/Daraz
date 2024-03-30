@@ -19,7 +19,7 @@ function Context({children}) {
 
     const dataGetFromBackend = (idOfArr) => {
   
-        fetch(`https://darazapi.netlify.app?id=${idOfArr}`)
+        fetch(`https://daraz-backend.vercel.app?id=${idOfArr}`)
         .then(response => response.json())
         .then(data => {
           // console.log( data)
